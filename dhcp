@@ -118,7 +118,7 @@ config host
 config host
 	option name 'MG203-CiWo'
 	option dns '1'
-	option mac '20:76:93:4D:E2:F0'
+	option mac '08:10:7A:3E:D2:32'
 	option ip '192.168.31.203'
 
 config host
