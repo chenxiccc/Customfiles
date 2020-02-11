@@ -118,9 +118,9 @@ config host
 config host
 	option name 'MG203-CiWo'
 	option dns '1'
-	option mac '08:10:7A:3E:D2:32'
 	option ip '192.168.31.203'
-
+	option mac '08:10:7A:3E:D2:32'
+	
 config host
 	option dns '1'
 	option mac 'E0:37:BF:AB:6F:43'
@@ -137,7 +137,13 @@ config host
 	option name 'TCL-TV-ZhuWo'
 	option dns '1'
 	option mac '7C:B2:32:A2:96:4C'
-	option ip '192.168.31.42
+	option ip '192.168.31.42'
+
+config host
+	option name 'MiBox3Pro'
+	option dns '1'
+	option mac '00:9E:C8:30:80:6D'
+	option ip '192.168.31.43'
 
 config host
 	option name 'TmallGenieX1-KeTing'
@@ -191,7 +197,7 @@ config host
 	option name 'NiuTingTing'
 	option dns '1'
 	option mac '80:B6:24:75:22:D4'
-	option ip '192.168.31.58''
+	option ip '192.168.31.58'
 
 config srvhost
 	option srv '_vlmcs._tcp'
@@ -199,4 +205,3 @@ config srvhost
 	option port '1688'
 	option class '0'
 	option weight '100'
-
