@@ -116,6 +116,12 @@ config host
 	option ip '192.168.31.202'
 
 config host
+	option name 'MG203-CiWo'
+	option dns '1'
+	option mac '20:76:93:4D:E2:F0'
+	option ip '192.168.31.203'
+
+config host
 	option dns '1'
 	option mac 'E0:37:BF:AB:6F:43'
 	option ip '192.168.31.40'
@@ -126,6 +132,12 @@ config host
 	option dns '1'
 	option mac '00:9E:C8:23:38:1D'
 	option ip '192.168.31.41'
+
+config host
+	option name 'TCL-TV-ZhuWo'
+	option dns '1'
+	option mac '7C:B2:32:A2:96:4C'
+	option ip '192.168.31.42
 
 config host
 	option name 'TmallGenieX1-KeTing'
@@ -179,19 +191,7 @@ config host
 	option name 'NiuTingTing'
 	option dns '1'
 	option mac '80:B6:24:75:22:D4'
-	option ip '192.168.31.58'
-
-config host
-	option name 'TCL-TV-ZhuWo'
-	option dns '1'
-	option mac '7C:B2:32:A2:96:4C'
-	option ip '192.168.31.42'
-
-config host
-	option name 'MG203-CiWo'
-	option dns '1'
-	option mac '20:76:93:4D:E2:F0'
-	option ip '192.168.31.203'
+	option ip '192.168.31.58''
 
 config srvhost
 	option srv '_vlmcs._tcp'
