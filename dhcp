@@ -26,15 +26,15 @@ config dhcp 'wan'
 	option ignore '1'
 
 config host
-	option name 'SG105Pro5-RuoDianXiang'
 	option dns '1'
-	option mac 'C0:A5:DD:E1:D9:36'
+	option mac 'C0:A5:DD:E1:D9:35'
+	option name 'SG105Pro5-KeTing'
 	option ip '192.168.31.5'
 
 config host
-	option name 'SG105Pro6-KeTing'
 	option dns '1'
-	option mac 'C0:A5:DD:E1:D9:35'
+	option mac 'C0:A5:DD:E1:D9:36'
+	option name 'SG105Pro6-RuoDianXiang'
 	option ip '192.168.31.6'
 
 config host
@@ -120,7 +120,7 @@ config host
 	option dns '1'
 	option ip '192.168.31.203'
 	option mac '08:10:7A:3E:D2:32'
-	
+
 config host
 	option dns '1'
 	option mac 'E0:37:BF:AB:6F:43'
@@ -134,15 +134,15 @@ config host
 	option ip '192.168.31.41'
 
 config host
-	option name 'TCL-TV-ZhuWo'
-	option dns '1'
-	option mac '7C:B2:32:A2:96:4C'
-	option ip '192.168.31.42'
-
-config host
 	option name 'MiBox3Pro'
 	option dns '1'
 	option mac '00:9E:C8:30:80:6D'
+	option ip '192.168.31.42'
+
+config host
+	option name 'TCL-TV-ZhuWo'
+	option dns '1'
+	option mac '7C:B2:32:A2:96:4C'
 	option ip '192.168.31.43'
 
 config host
@@ -205,3 +205,10 @@ config srvhost
 	option port '1688'
 	option class '0'
 	option weight '100'
+
+config odhcpd 'odhcpd'
+	option maindhcp '0'
+	option leasefile '/tmp/hosts/odhcpd'
+	option leasetrigger '/usr/sbin/odhcpd-update'
+	option loglevel '4'
+
