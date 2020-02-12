@@ -27,16 +27,16 @@ config dhcp 'wan'
 
 config host
 	option dns '1'
-	option mac 'C0:A5:DD:E1:D9:35'
-	option name 'SG105Pro5-KeTing'
+	option mac 'C0:A5:DD:E1:D9:36'
+	option name 'SG105Pro5-RuoDianXiang'
 	option ip '192.168.31.5'
 
 config host
 	option dns '1'
-	option mac 'C0:A5:DD:E1:D9:36'
-	option name 'SG105Pro6-RuoDianXiang'
+	option mac 'C0:A5:DD:E1:D9:35'
+	option name 'SG105Pro6-KeTing'
 	option ip '192.168.31.6'
-
+	
 config host
 	option name 'iPhoneXsMax'
 	option dns '1'
