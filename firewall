@@ -203,7 +203,7 @@ config redirect
 	option src_dport '55505'
 	option dest_ip '192.168.31.5'
 	option dest_port '80'
-	option name 'SG5-KeTing'
+	option name 'SG5-RuoDianXiang'
 
 config redirect
 	option target 'DNAT'
@@ -213,5 +213,5 @@ config redirect
 	option src_dport '55506'
 	option dest_ip '192.168.31.6'
 	option dest_port '80'
-	option name 'SG6-RuoDianXiang'
+	option name 'SG6-KeTing'
 
