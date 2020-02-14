@@ -1,31 +1,9 @@
 
 config defaults
-	option syn_flood '0'
+	option syn_flood '1'
 	option input 'ACCEPT'
 	option output 'ACCEPT'
 	option forward 'REJECT'
-	option fullcone '1'
-
-config zone
-	option name 'lan'
-	list network 'lan'
-	option input 'ACCEPT'
-	option output 'ACCEPT'
-	option forward 'ACCEPT'
-
-config zone
-	option name 'wan'
-	list network 'wan'
-	list network 'wan6'
-	option input 'REJECT'
-	option output 'ACCEPT'
-	option forward 'REJECT'
-	option masq '1'
-	option mtu_fix '1'
-
-config forwarding
-	option src 'lan'
-	option dest 'wan'
 
 config rule
 	option name 'Allow-DHCP-Renew'
@@ -121,39 +99,6 @@ config rule
 	option dest_port '500'
 	option proto 'udp'
 	option target 'ACCEPT'
-
-config include
-	option path '/etc/firewall.user'
-
-config include 'miniupnpd'
-	option type 'script'
-	option path '/usr/share/miniupnpd/firewall.include'
-	option family 'any'
-	option reload '1'
-
-config include 'adbyby'
-	option type 'script'
-	option path '/usr/share/adbyby/firewall.include'
-	option reload '1'
-
-config rule 'adblock'
-	option name 'adblock'
-	option target 'DROP'
-	option src 'wan'
-	option proto 'tcp'
-	option dest_port '8118'
-
-config rule 'kms'
-	option name 'kms'
-	option target 'ACCEPT'
-	option src 'wan'
-	option proto 'tcp'
-	option dest_port '1688'
-
-config include 'wrtbwmon'
-	option type 'script'
-	option path '/etc/wrtbwmon.include'
-	option reload '1'
 
 config redirect
 	option target 'DNAT'
