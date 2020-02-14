@@ -3,7 +3,6 @@ config defaults
 	option input 'ACCEPT'
 	option output 'ACCEPT'
 	option forward 'REJECT'
-	option fullcone '1'
 
 config redirect
 	option target 'DNAT'
