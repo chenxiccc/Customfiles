@@ -1,0 +1,336 @@
+
+config dnsmasq
+	option domainneeded '1'
+	option localise_queries '1'
+	option rebind_protection '1'
+	option rebind_localhost '1'
+	option local '/lan/'
+	option domain 'lan'
+	option expandhosts '1'
+	option authoritative '1'
+	option readethers '1'
+	option leasefile '/tmp/dhcp.leases'
+	option resolvfile '/tmp/resolv.conf.auto'
+	option nonwildcard '1'
+	option localservice '1'
+
+config dhcp 'lan'
+	option interface 'lan'
+	option start '100'
+	option limit '150'
+	option leasetime '12h'
+	option dhcpv6 'server'
+	option ra 'server'
+	option ra_management '1'
+
+config dhcp 'wan'
+	option interface 'wan'
+	option ignore '1'
+
+config odhcpd 'odhcpd'
+	option maindhcp '0'
+	option leasefile '/tmp/hosts/odhcpd'
+	option leasetrigger '/usr/sbin/odhcpd-update'
+	option loglevel '4'
+
+config srvhost
+	option srv '_vlmcs._tcp'
+	option target 'OpenWrt'
+	option port '1688'
+	option class '0'
+	option weight '100'
+
+config host
+	option name 'iap207-1-keting'
+	option dns '1'
+	option mac 'B0:B8:67:C1:94:92'
+	option ip '192.168.31.1'
+
+config host
+	option name 'iap207-2-zhuwo'
+	option dns '1'
+	option mac 'B0:B8:67:C1:95:A6'
+	option ip '192.168.31.2'
+
+config host
+	option name 'iap207-3-ciwo'
+	option dns '1'
+	option mac 'B0:B8:67:C1:98:04'
+	option ip '192.168.31.3'
+
+config host
+	option name 'ESXi'
+	option dns '1'
+	option mac '00:e0:67:0e:93:f6'
+	option ip '192.168.31.4'
+
+config host
+	option dns '1'
+	option mac '00:11:32:3D:9D:7A'
+	option ip '192.168.31.188'
+	option name 'DiskStation-MiniPCIe'
+
+config host
+	option name 'Lubuntu'
+	option dns '1'
+	option mac '00:0C:29:C1:04:EC'
+	option ip '192.168.31.166'
+
+config host
+	option name 'Facai-iPhoneXsMax'
+	option dns '1'
+	option mac 'FC:2A:9C:5C:5C:17'
+	option ip '192.168.31.10'
+
+config host
+	option name 'Facai-MacbookPro'
+	option dns '1'
+	option mac '38:F9:D3:96:FA:9E'
+	option ip '192.168.31.11'
+
+config host
+	option name 'MiNote3'
+	option dns '1'
+	option mac 'F4:F5:DB:DA:13:E9'
+	option ip '192.168.31.12'
+
+config host
+	option name 'Facai-iPadPro11'
+	option dns '1'
+	option mac '4C:56:9D:6D:85:25'
+	option ip '192.168.31.13'
+
+config host
+	option name 'Xumin-iPhoneX'
+	option dns '1'
+	option mac '54:33:CB:9D:65:38'
+	option ip '192.168.31.14'
+
+config host
+	option name 'Xumin-iPadPro129'
+	option dns '1'
+	option mac '9C:E6:5E:E5:06:4C'
+	option ip '192.168.31.15'
+
+config host
+	option name 'Xumin-MacbookAir'
+	option dns '1'
+	option mac 'F0:79:60:16:78:56'
+	option ip '192.168.31.16'
+
+config host
+	option name 'iPhone6sPlus'
+	option dns '1'
+	option mac 'FC:FC:48:D8:90:7A'
+	option ip '192.168.31.17'
+
+config host
+	option name 'Xumin-iPadMini4'
+	option dns '1'
+	option mac 'E8:B2:AC:2C:20:70'
+	option ip '192.168.31.18'
+
+config host
+	option name 'Mi5'
+	option dns '1'
+	option mac 'B0:E2:35:25:25:1D'
+	option ip '192.168.31.19'
+
+config host
+	option name 'Facai-AppleWatch4'
+	option dns '1'
+	option mac 'F8:6F:C1:28:1B:4B'
+	option ip '192.168.31.20'
+
+config host
+	option name 'Keting-Mi-TV'
+	option dns '1'
+	option mac 'E0:37:BF:6D:8D:26'
+	option ip '192.168.31.40'
+
+config host
+	option name 'Zhuwo-Mi-TV'
+	option dns '1'
+	option mac '10:D0:7A:A3:A8:A4'
+	option ip '192.168.31.41'
+
+config host
+	option name 'Ciwo-Mi-TV'
+	option dns '1'
+	option mac '10:D0:7A:4B:9E:7E'
+	option ip '192.168.31.42'
+
+config host
+	option name 'AppleTV4'
+	option dns '1'
+	option mac 'C8:69:CD:3D:4E:FB'
+	option ip '192.168.31.43'
+
+config host
+	option name 'Aqara_Hub-DBD5'
+	option dns '1'
+	option mac '58:B3:FC:5B:8B:98'
+	option ip '192.168.31.55'
+
+config host
+	option name 'Keting-TmallGenieX1'
+	option dns '1'
+	option mac '18:82:19:FE:04:32'
+	option ip '192.168.31.50'
+
+config host
+	option name 'Zhuwo-TmallGenieFangTang'
+	option dns '1'
+	option mac '18:BC:5A:D0:97:7D'
+	option ip '192.168.31.51'
+
+config host
+	option name 'lumi-gateway-v3_miio87373134'
+	option dns '1'
+	option mac '7C:49:EB:18:D6:61'
+	option ip '192.168.31.54'
+
+config host
+	option name 'MiSoundBox-Touch'
+	option dns '1'
+	option mac 'EC:41:18:B1:BB:7B'
+	option ip '192.168.31.52'
+
+config host
+	option name 'MiSoundBox'
+	option dns '1'
+	option mac '50:A0:09:E1:05:C3'
+	option ip '192.168.31.53'
+
+config host
+	option name 'KeTing-mijia-clock'
+	option dns '1'
+	option mac '40:31:3C:6A:C4:DD'
+	option ip '192.168.31.56'
+
+config host
+	option name 'ZhuWo-mijia-clock'
+	option dns '1'
+	option mac '40:31:3C:6A:60:24'
+	option ip '192.168.31.57'
+
+config host
+	option name 'LifeSmartMiniV1'
+	option dns '1'
+	option mac '6C:21:A2:0A:E3:9B'
+	option ip '192.168.31.58'
+
+config host
+	option name 'FingerPrintLock-Nokia-Danmark-AS'
+	option dns '1'
+	option mac '00:02:EE:30:95:95'
+	option ip '192.168.31.59'
+
+config host
+	option name 'dmaker-airfresh-t2017-miio41'
+	option dns '1'
+	option mac '7C:49:EB:57:8D:D4'
+	option ip '192.168.31.70'
+
+config host
+	option name 'rockrobo'
+	option dns '1'
+	option mac '7C:49:EB:9D:6C:E9'
+	option ip '192.168.31.71'
+
+config host
+	option name 'Mi-PureWater-ESP08ACF4'
+	option dns '1'
+	option mac '78:11:DC:08:AC:F4'
+	option ip '192.168.31.72'
+
+config host
+	option name 'Mi-DaFang-Camera'
+	option dns '1'
+	option mac '34:CE:00:E5:84:C9'
+	option ip '192.168.31.73'
+
+config host
+	option name 'MiYK-chuangmi-ir-v2_miio12919268'
+	option dns '1'
+	option mac 'F0:B4:29:06:1C:5F'
+	option ip '192.168.31.74'
+
+config host
+	option name 'KT-airpurifierPro-v6_miio725686'
+	option dns '1'
+	option mac '78:11:DC:65:11:55'
+	option ip '192.168.31.75'
+
+config host
+	option name 'ZW-airpurifier2s-ma2_miio78347'
+	option dns '1'
+	option mac '78:11:DC:B0:A7:CB'
+	option ip '192.168.31.76'
+
+config host
+	option name 'CiWo-airpurifier2s-ma2_miio78350'
+	option dns '1'
+	option mac '78:11:DC:B0:B5:F6'
+	option ip '192.168.31.77'
+
+config host
+	option name 'xjx-toilet-pro-miio91654310'
+	option dns '1'
+	option mac '7C:49:EB:36:A6:A1'
+	option ip '192.168.31.78'
+
+config host
+	option name 'chunmi-cooker-press1_miio47209'
+	option dns '1'
+	option mac 'F0:B4:29:C9:1E:CD'
+	option ip '192.168.31.79'
+
+config host
+	option name 'LUKA-7742042b1694e841'
+	option dns '1'
+	option mac '88:C4:19:E1:E0:38'
+	option ip '192.168.31.80'
+
+config host
+	option name 'BroadLink-ChaZuo1'
+	option dns '1'
+	option mac '78:0F:77:CC:B4:3C'
+	option ip '192.168.31.81'
+
+config host
+	option name 'BL-ChaZuo-43-1a-ec'
+	option dns '1'
+	option mac '78:0F:77:43:1A:EC'
+	option ip '192.168.31.82'
+
+config host
+	option name 'AppleTV3'
+	option dns '1'
+	option mac '9C:20:7B:7E:52:93'
+	option ip '192.168.31.44'
+
+config host
+	option name 'iPhone6'
+	option dns '1'
+	option mac '64:9A:BE:13:57:45'
+	option ip '192.168.31.21'
+
+config host
+	option name 'MiMaoYan'
+	option dns '1'
+	option mac '24:7D:4D:93:5D:4A'
+	option ip '192.168.31.83'
+
+config host
+	option name 'iPhone7Plus'
+	option dns '1'
+	option mac 'A0:3B:E3:DF:B2:81'
+	option ip '192.168.31.22'
+
+config host
+	option name 'XiaoTianCaiQ2'
+	option dns '1'
+	option mac '7C:FD:82:6B:48:01'
+	option ip '192.168.31.23'
+
