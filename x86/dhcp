@@ -161,6 +161,12 @@ config host
 	option ip '192.168.31.23'
 
 config host
+	option name 'NiuTingTing'
+	option dns '1'
+	option mac '80:B6:24:75:22:D4'
+	option ip '192.168.31.24'
+
+config host
 	option name 'Keting-MiTV'
 	option dns '1'
 	option mac 'E0:37:BF:6D:8D:26'
@@ -333,3 +339,9 @@ config host
 	option dns '1'
 	option mac '24:7D:4D:93:5D:4A'
 	option ip '192.168.31.83'
+
+config host
+	option name 'HPPrinterDJ4720'
+	option dns '1'
+	option mac 'C4:65:16:51:B3:B6'
+	option ip '192.168.31.84'
