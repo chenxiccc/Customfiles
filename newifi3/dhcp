@@ -30,13 +30,13 @@ config host
 	option mac 'C0:A5:DD:E1:D9:36'
 	option name 'SG105Pro5-RuoDianXiang'
 	option ip '192.168.31.5'
-
+	
 config host
 	option dns '1'
 	option mac 'C0:A5:DD:E1:D9:35'
 	option name 'SG105Pro6-KeTing'
 	option ip '192.168.31.6'
-	
+
 config host
 	option name 'iPhoneXsMax'
 	option dns '1'
@@ -44,7 +44,7 @@ config host
 	option ip '192.168.31.10'
 
 config host
-	option name 'FacaiMacbookPro'
+	option name 'Facai-MacbookPro'
 	option dns '1'
 	option mac '38:F9:D3:96:FA:9E'
 	option ip '192.168.31.11'
@@ -56,52 +56,76 @@ config host
 	option ip '192.168.31.12'
 
 config host
-	option name 'iPhone7Plus'
+	option name 'MiNote3'
 	option dns '1'
-	option mac 'A0:3B:E3:DF:B2:81'
+	option mac 'F4:F5:DB:DA:13:E9'
 	option ip '192.168.31.13'
-
-config host
-	option name 'iPhone6sPlus'
-	option dns '1'
-	option mac 'FC:FC:48:D8:90:7A'
-	option ip '192.168.31.14'
-
-config host
-	option name 'iPhone6'
-	option dns '1'
-	option mac '64:9A:BE:13:57:45'
-	option ip '192.168.31.15'
-
-config host
-	option name 'XiaoMi5'
-	option dns '1'
-	option mac 'B0:E2:35:25:25:1D'
-	option ip '192.168.31.16'
-
-config host
-	option name 'iPadPro129'
-	option dns '1'
-	option mac '9C:E6:5E:E5:06:4C'
-	option ip '192.168.31.17'
-
-config host
-	option name 'XiaoTianCaiQ2'
-	option dns '1'
-	option mac '7C:FD:82:6B:48:01'
-	option ip '192.168.31.18'
 
 config host
 	option name 'iPhoneX'
 	option dns '1'
 	option mac '54:33:CB:9D:65:38'
+	option ip '192.168.31.14'
+
+config host
+	option name 'iPadPro129'
+	option dns '1'
+	option mac '9C:E6:5E:E5:06:4C'
+	option ip '192.168.31.15'
+
+config host
+	option name 'Xumin-MacbookAir'
+	option dns '1'
+	option mac 'F0:79:60:16:78:56'
+	option ip '192.168.31.16'
+
+config host
+	option name 'iPhone6sPlus'
+	option dns '1'
+	option mac 'FC:FC:48:D8:90:7A'
+	option ip '192.168.31.17'
+
+config host
+	option name 'iPadMini4'
+	option dns '1'
+	option mac 'E8:B2:AC:2C:20:70'
+	option ip '192.168.31.18'
+
+config host
+	option name 'XiaoMi5'
+	option dns '1'
+	option mac 'B0:E2:35:25:25:1D'
 	option ip '192.168.31.19'
 
 config host
-	option name 'MacBookAir-XM'
+	option name 'AppleWatch4'
 	option dns '1'
-	option mac 'F0:79:60:16:78:56'
+	option mac 'F8:6F:C1:28:1B:4B'
 	option ip '192.168.31.20'
+
+config host
+	option name 'iPhone6'
+	option dns '1'
+	option mac '64:9A:BE:13:57:45'
+	option ip '192.168.31.21'
+
+config host
+	option name 'iPhone7Plus'
+	option dns '1'
+	option mac 'A0:3B:E3:DF:B2:81'
+	option ip '192.168.31.22'
+
+config host
+	option name 'XiaoTianCaiQ2'
+	option dns '1'
+	option mac '7C:FD:82:6B:48:01'
+	option ip '192.168.31.23'
+	
+config host
+	option name 'NiuTingTing'
+	option dns '1'
+	option mac '80:B6:24:75:22:D4'
+	option ip '192.168.31.24'
 
 config host
 	option name 'Mg201-KeTing'
@@ -192,12 +216,6 @@ config host
 	option dns '1'
 	option mac '78:11:DC:AC:91:C4'
 	option ip '192.168.31.57'
-
-config host
-	option name 'NiuTingTing'
-	option dns '1'
-	option mac '80:B6:24:75:22:D4'
-	option ip '192.168.31.58'
 
 config srvhost
 	option srv '_vlmcs._tcp'
