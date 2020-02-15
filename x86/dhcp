@@ -253,88 +253,88 @@ config host
 	option name 'dmaker-airfresh-t2017-miio41'
 	option dns '1'
 	option mac '7C:49:EB:57:8D:D4'
-	option ip '192.168.31.70'
+	option ip '192.168.31.60'
 
 config host
 	option name 'rockrobo'
 	option dns '1'
 	option mac '7C:49:EB:9D:6C:E9'
-	option ip '192.168.31.71'
+	option ip '192.168.31.61'
 
 config host
 	option name 'Mi-PureWater-ESP08ACF4'
 	option dns '1'
 	option mac '78:11:DC:08:AC:F4'
-	option ip '192.168.31.72'
+	option ip '192.168.31.62'
 
 config host
 	option name 'Mi-DaFang-Camera'
 	option dns '1'
 	option mac '34:CE:00:E5:84:C9'
-	option ip '192.168.31.73'
+	option ip '192.168.31.63'
 
 config host
 	option name 'MiYK-chuangmi-ir-v2_miio12919268'
 	option dns '1'
 	option mac 'F0:B4:29:06:1C:5F'
-	option ip '192.168.31.74'
+	option ip '192.168.31.64'
 
 config host
 	option name 'KT-airpurifierPro-v6_miio725686'
 	option dns '1'
 	option mac '78:11:DC:65:11:55'
-	option ip '192.168.31.75'
+	option ip '192.168.31.65'
 
 config host
 	option name 'ZW-airpurifier2s-ma2_miio78347'
 	option dns '1'
 	option mac '78:11:DC:B0:A7:CB'
-	option ip '192.168.31.76'
+	option ip '192.168.31.66'
 
 config host
 	option name 'CiWo-airpurifier2s-ma2_miio78350'
 	option dns '1'
 	option mac '78:11:DC:B0:B5:F6'
-	option ip '192.168.31.77'
+	option ip '192.168.31.67'
 
 config host
 	option name 'xjx-toilet-pro-miio91654310'
 	option dns '1'
 	option mac '7C:49:EB:36:A6:A1'
-	option ip '192.168.31.78'
+	option ip '192.168.31.68'
 
 config host
 	option name 'chunmi-cooker-press1_miio47209'
 	option dns '1'
 	option mac 'F0:B4:29:C9:1E:CD'
-	option ip '192.168.31.79'
+	option ip '192.168.31.69'
 
 config host
 	option name 'LUKA-7742042b1694e841'
 	option dns '1'
 	option mac '88:C4:19:E1:E0:38'
-	option ip '192.168.31.80'
+	option ip '192.168.31.70'
 
 config host
 	option name 'BroadLink-ChaZuo1'
 	option dns '1'
 	option mac '78:0F:77:CC:B4:3C'
-	option ip '192.168.31.81'
+	option ip '192.168.31.71'
 
 config host
 	option name 'BL-ChaZuo-43-1a-ec'
 	option dns '1'
 	option mac '78:0F:77:43:1A:EC'
-	option ip '192.168.31.82'
+	option ip '192.168.31.72'
 
 config host
 	option name 'MiMaoYan'
 	option dns '1'
 	option mac '24:7D:4D:93:5D:4A'
-	option ip '192.168.31.83'
+	option ip '192.168.31.73'
 
 config host
 	option name 'HPPrinterDJ4720'
 	option dns '1'
 	option mac 'C4:65:16:51:B3:B6'
-	option ip '192.168.31.84'
+	option ip '192.168.31.74'
