@@ -1,3 +1,4 @@
+
 config redirect
 	option target 'DNAT'
 	option src 'wan'
@@ -13,9 +14,9 @@ config redirect
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option dest_ip '192.168.31.4'
+	option dest_ip '192.168.31.200'
 	option dest_port '443'
-	option name 'ESXi22443'
+	option name 'OpSSL22443'
 	option src_dport '22443'
 
 config redirect
@@ -23,10 +24,30 @@ config redirect
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option src_dport '4343'
-	option dest_ip '192.168.31.1'
-	option dest_port '4343'
-	option name 'Aruba4343'
+	option dest_ip '192.168.31.200'
+	option dest_port '22'
+	option name 'OpSSH22222'
+	option src_dport '22222'
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option dest_ip '192.168.31.4'
+	option dest_port '443'
+	option name 'ESXi44443'
+	option src_dport '44443'
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option dest_ip '192.168.31.4'
+	option dest_port '22'
+	option name 'ESXI-SSH-44422'
+	option src_dport '44422'
 
 config redirect
 	option target 'DNAT'
@@ -43,10 +64,10 @@ config redirect
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option src_dport '28080'
-	option dest_ip '192.168.31.166'
-	option dest_port '28080'
-	option name 'Lubuntu28080'
+	option src_dport '25001'
+	option dest_ip '192.168.31.188'
+	option dest_port '5001'
+	option name 'DS25001'
 
 config redirect
 	option target 'DNAT'
@@ -63,9 +84,27 @@ config redirect
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option src_dport '22422'
-	option dest_ip '192.168.31.4'
-	option dest_port '22'
-	option name 'ESXI-SSH'
-	option enabled '0'
+	option dest_ip '192.168.31.1'
+	option dest_port '4343'
+	option name 'Aruba14343'
+	option src_dport '14343'
 
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option src_dport '11122'
+	option dest_ip '192.168.31.1'
+	option dest_port '22'
+	option name 'ArubaSSH11122'
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option src_dport '28080'
+	option dest_ip '192.168.31.166'
+	option dest_port '28080'
+	option name 'Lubuntu28080'
