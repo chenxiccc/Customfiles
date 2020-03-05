@@ -15,12 +15,24 @@ config host
 	option dns '1'
 	option mac 'B0:B8:67:C1:98:04'
 	option ip '192.168.31.3'
+	
+config host
+	option name 'ap335-4-keting'
+	option dns '1'
+	option mac 'a8:bd:27:c5:2c:cc'
+	option ip '192.168.31.4'
+	
+config host
+	option name 'Aruba7010'
+	option dns '1'
+	option mac '20:4c:03:04:e1:20'
+	option ip '192.168.31.7'
 
 config host
 	option name 'ESXi'
 	option dns '1'
 	option mac '00:e0:67:0e:93:f6'
-	option ip '192.168.31.4'
+	option ip '192.168.31.8'
 
 config host
 	option dns '1'
