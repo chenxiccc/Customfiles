@@ -1,26 +1,32 @@
 config host
-	option name 'iap207-1-keting'
+	option name 'KeTing-1-207'
 	option dns '1'
 	option mac 'B0:B8:67:C1:94:92'
 	option ip '192.168.31.1'
 
 config host
-	option name 'iap207-2-zhuwo'
+	option name 'ZhuWo-2-207'
 	option dns '1'
 	option mac 'B0:B8:67:C1:95:A6'
 	option ip '192.168.31.2'
 
 config host
-	option name 'iap207-3-ciwo'
+	option name 'CiWo-3-207'
 	option dns '1'
 	option mac 'B0:B8:67:C1:98:04'
 	option ip '192.168.31.3'
 	
 config host
-	option name 'ap335-4-keting'
+	option name 'KeTing-4-335'
 	option dns '1'
 	option mac 'a8:bd:27:c5:2c:cc'
 	option ip '192.168.31.4'
+	
+config host
+	option name 'Zhuwo-5-225'
+	option dns '1'
+	option mac '84:d4:7e:c7:32:3e'
+	option ip '192.168.31.5'
 	
 config host
 	option name 'Aruba7010'
