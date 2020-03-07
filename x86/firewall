@@ -27,7 +27,29 @@ config redirect
 	option dest_port '22'
 	option name 'OpSSH22222'
 	option src_dport '22222'
-	
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option dest_ip '192.168.31.4'
+	option dest_port '4343'
+	option name 'ArubaIAP14343'
+	option src_dport '14343'
+	option enabled '0'
+
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option src_dport '11122'
+	option dest_ip '192.168.31.4'
+	option dest_port '22'
+	option name 'ArubaIAPSSH11122'
+	option enabled '0'
+
 config redirect
 	option target 'DNAT'
 	option src 'wan'
@@ -39,7 +61,6 @@ config redirect
 	option name 'Aruba701024343'
 
 config redirect
-	option enabled '1'
 	option target 'DNAT'
 	option src 'wan'
 	option dest 'lan'
@@ -54,20 +75,20 @@ config redirect
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option dest_ip '192.168.31.8'
 	option dest_port '443'
 	option name 'ESXi44443'
 	option src_dport '44443'
+	option dest_ip '192.168.31.8'
 
 config redirect
 	option target 'DNAT'
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option dest_ip '192.168.31.8'
 	option dest_port '22'
 	option name 'ESXI-SSH-44422'
 	option src_dport '44422'
+	option dest_ip '192.168.31.8'
 
 config redirect
 	option target 'DNAT'
@@ -118,26 +139,6 @@ config redirect
 	option dest_ip '192.168.31.188'
 	option dest_port '5006'
 	option name 'DsWebDav25006'
-
-config redirect
-	option target 'DNAT'
-	option src 'wan'
-	option dest 'lan'
-	option proto 'tcp udp'
-	option dest_ip '192.168.31.4'
-	option dest_port '4343'
-	option name 'ArubaIAP14343'
-	option src_dport '14343'
-
-config redirect
-	option target 'DNAT'
-	option src 'wan'
-	option dest 'lan'
-	option proto 'tcp udp'
-	option src_dport '11122'
-	option dest_ip '192.168.31.4'
-	option dest_port '22'
-	option name 'ArubaIAPSSH11122'
 
 config redirect
 	option target 'DNAT'
