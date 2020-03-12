@@ -305,7 +305,7 @@ config host
 	option ip '192.168.31.70'
 
 config host
-	option name 'BroadLink-ChaZuo1'
+	option name 'BL-ChaZuo1-LifeSmart-KeTing'
 	option dns '1'
 	option mac '78:0F:77:CC:B4:3C'
 	option ip '192.168.31.71'
