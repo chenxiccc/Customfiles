@@ -17,21 +17,21 @@ config host
 	option ip '192.168.31.3'
 	
 config host
-	option name 'KeTing-4-335'
+	option name 'KT-4-335'
 	option dns '1'
 	option mac 'a8:bd:27:c5:2c:cc'
 	option ip '192.168.31.4'
-	
+
 config host
-	option name 'Zhuwo-5-225'
-	option dns '1'
-	option mac '84:d4:7e:c7:32:3e'
-	option ip '192.168.31.5'
-	
-config host
-	option name 'Zhuwo-6-325'
+	option name 'ZW-5-325'
 	option dns '1'
 	option mac '40:e3:d6:cc:ff:6a'
+	option ip '192.168.31.5'
+
+config host
+	option name 'CW-6-225'
+	option dns '1'
+	option mac '84:d4:7e:c7:32:3e'
 	option ip '192.168.31.6'
 	
 config host
