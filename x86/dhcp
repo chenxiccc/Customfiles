@@ -29,6 +29,12 @@ config host
 	option ip '192.168.31.5'
 	
 config host
+	option name 'Zhuwo-6-325'
+	option dns '1'
+	option mac '40:e3:d6:cc:ff:6a'
+	option ip '192.168.31.6'
+	
+config host
 	option name 'Aruba7010'
 	option dns '1'
 	option mac '20:4c:03:04:e1:20'
