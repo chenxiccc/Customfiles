@@ -89,6 +89,16 @@ config redirect
 	option name 'ESXI-SSH-44422'
 	option src_dport '44422'
 	option dest_ip '192.168.31.8'
+	
+config redirect
+	option target 'DNAT'
+	option src 'wan'
+	option dest 'lan'
+	option proto 'tcp udp'
+	option src_dport '902'
+	option dest_ip '192.168.31.8'
+	option dest_port '902'
+	option name 'Esxi902'
 
 config redirect
 	option target 'DNAT'
