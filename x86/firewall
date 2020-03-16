@@ -37,7 +37,7 @@ config redirect
 	option dest_port '4343'
 	option name 'ArubaIAP14343'
 	option src_dport '14343'
-	option enabled '0'
+	option enabled '1'
 
 config redirect
 	option target 'DNAT'
@@ -48,7 +48,7 @@ config redirect
 	option dest_ip '192.168.31.4'
 	option dest_port '22'
 	option name 'ArubaIAPSSH11122'
-	option enabled '0'
+	option enabled '1'
 
 config redirect
 	option target 'DNAT'
