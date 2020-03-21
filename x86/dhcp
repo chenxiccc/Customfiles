@@ -351,3 +351,9 @@ config host
 	option dns '1'
 	option mac '28:6C:07:28:1C:21'
 	option ip '192.168.31.77'
+
+config host
+	option name 'MiPlugUSB'
+	option dns '1'
+	option mac '40:31:3C:EA:65:AE'
+	option ip '192.168.31.78'
