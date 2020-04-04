@@ -1,16 +1,4 @@
 config host
-	option name 'KeTing-1-207'
-	option dns '1'
-	option mac 'B0:B8:67:C1:94:92'
-	option ip '192.168.31.1'
-
-config host
-	option name 'ZhuWo-2-207'
-	option dns '1'
-	option mac 'B0:B8:67:C1:95:A6'
-	option ip '192.168.31.2'
-
-config host
 	option dns '1'
 	option mac '94:b4:0f:c0:19:54'
 	option name 'ZW-3-225'
