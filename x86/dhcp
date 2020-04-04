@@ -11,10 +11,10 @@ config host
 	option ip '192.168.31.2'
 
 config host
- 	option name 'CiWo-3-207'
- 	option dns '1'
- 	option mac 'B0:B8:67:C1:98:04'
- 	option ip '192.168.31.3'
+	option dns '1'
+	option mac '94:b4:0f:c0:19:54'
+	option name 'ZW-3-225'
+	option ip '192.168.31.3'
 
 config host
 	option name 'KT-4-335'
@@ -25,7 +25,7 @@ config host
 config host
 	option name 'ZW-5-225'
 	option dns '1'
-	option mac '94:b4:0f:c0:19:54'
+	option mac '40:e3:d6:c6:5d:20'
 	option ip '192.168.31.5'
 
 config host
