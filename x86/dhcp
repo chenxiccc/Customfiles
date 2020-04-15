@@ -51,6 +51,12 @@ config host
 	option dns '1'
 	option mac 'E4:F4:C6:08:41:87'
 	option ip '192.168.31.199'
+	
+config host
+	option mac '00:10:F3:5C:D5:2A'
+	option name 'MeruMC1550'
+	option dns '1'
+	option ip '192.168.31.210'
 
 config host
 	option name 'iPhoneXsMax'
@@ -141,6 +147,12 @@ config host
 	option dns '1'
 	option mac '80:B6:24:75:22:D4'
 	option ip '192.168.31.24'
+
+config host
+	option name 'K30Pro'
+	option dns '1'
+	option mac '9C:28:F7:96:74:F6'
+	option ip '192.168.31.25'
 
 config host
 	option name 'Keting-MiTV'
