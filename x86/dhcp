@@ -1,3 +1,90 @@
+
+config dnsmasq
+	option domainneeded '1'
+	option localise_queries '1'
+	option rebind_protection '1'
+	option rebind_localhost '1'
+	option local '/lan/'
+	option domain 'lan'
+	option expandhosts '1'
+	option authoritative '1'
+	option readethers '1'
+	option leasefile '/tmp/dhcp.leases'
+	option localservice '1'
+	option filter_aaaa '1'
+	option port '53'
+	option tftp_root '/tmp'
+	option enable_tftp '1'
+	option resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
+
+config dhcp 'lan'
+	option interface 'lan'
+	option start '100'
+	option limit '150'
+	option leasetime '12h'
+	option ra_slaac '1'
+	list ra_flags 'managed-config'
+	list ra_flags 'other-config'
+	option force '1'
+
+config dhcp 'wan'
+	option interface 'wan'
+	option ignore '1'
+
+config odhcpd 'odhcpd'
+	option maindhcp '0'
+	option leasefile '/tmp/hosts/odhcpd'
+	option leasetrigger '/usr/sbin/odhcpd-update'
+	option loglevel '4'
+
+config host
+	option dns '1'
+	option mac '00:11:32:3D:9D:7A'
+	option ip '192.168.31.188'
+	option name 'DiskStation-MiniPCIe'
+
+config host
+	option name 'R7000'
+	option dns '1'
+	option mac 'E4:F4:C6:08:41:87'
+	option ip '192.168.31.199'
+
+config host
+	option mac '00:10:F3:5C:D5:2A'
+	option name 'MeruMC1550'
+	option dns '1'
+	option ip '192.168.31.210'
+
+config host
+	option mac '00:0C:E6:12:FF:81'
+	option name 'meru-ap1'
+	option dns '1'
+	option ip '192.168.31.211'
+
+config host
+	option mac '00:0C:E6:14:AC:13'
+	option name 'meru-ap2'
+	option dns '1'
+	option ip '192.168.31.212'
+
+config host
+	option mac '00:0C:E6:17:CC:3D'
+	option name 'meru-ap3'
+	option dns '1'
+	option ip '192.168.31.213'
+
+config host
+	option mac '00:0C:E6:1B:25:8F'
+	option name 'meru-ap4'
+	option dns '1'
+	option ip '192.168.31.214'
+
+config host
+	option mac '00:0C:29:2E:C8:80'
+	option name 'Win-Esxi'
+	option dns '1'
+	option ip '192.168.31.166'
+
 config host
 	option dns '1'
 	option mac '94:b4:0f:c0:19:54'
@@ -21,7 +108,7 @@ config host
 	option dns '1'
 	option mac '84:d4:7e:c7:32:3e'
 	option ip '192.168.31.6'
-	
+
 config host
 	option name 'Aruba7010'
 	option dns '1'
@@ -35,28 +122,10 @@ config host
 	option ip '192.168.31.8'
 
 config host
+	option name 'Mi10Ultra'
 	option dns '1'
-	option mac '00:11:32:3D:9D:7A'
-	option ip '192.168.31.188'
-	option name 'DiskStation-MiniPCIe'
-
-config host
-	option name 'Lubuntu'
-	option dns '1'
-	option mac '00:0C:29:C1:04:EC'
-	option ip '192.168.31.166'
-	
-config host
-	option name 'R7000'
-	option dns '1'
-	option mac 'E4:F4:C6:08:41:87'
-	option ip '192.168.31.199'
-	
-config host
-	option mac '00:10:F3:5C:D5:2A'
-	option name 'MeruMC1550'
-	option dns '1'
-	option ip '192.168.31.210'
+	option mac 'e0:1f:88:30:5b:76'
+	option ip '192.168.31.9'
 
 config host
 	option name 'iPhoneXsMax'
@@ -77,9 +146,9 @@ config host
 	option ip '192.168.31.12'
 
 config host
-	option name 'MiNote3'
+	option name 'iPadPro129'
 	option dns '1'
-	option mac 'F4:F5:DB:DA:13:E9'
+	option mac '9C:E6:5E:E5:06:4C'
 	option ip '192.168.31.13'
 
 config host
@@ -89,21 +158,21 @@ config host
 	option ip '192.168.31.14'
 
 config host
-	option name 'iPadPro129'
+	option name 'XiaoMi5'
 	option dns '1'
-	option mac '9C:E6:5E:E5:06:4C'
+	option mac 'B0:E2:35:25:25:1D'
 	option ip '192.168.31.15'
 
 config host
-	option name 'Xumin-MacbookAir'
+	option name 'iPhone7Plus'
 	option dns '1'
-	option mac 'F0:79:60:16:78:56'
+	option mac 'A0:3B:E3:DF:B2:81'
 	option ip '192.168.31.16'
 
 config host
-	option name 'iPhone6sPlus'
+	option name 'Xumin-NewMacbookAir'
 	option dns '1'
-	option mac 'FC:FC:48:D8:90:7A'
+	option mac '3c:22:fb:d6:2f:57'
 	option ip '192.168.31.17'
 
 config host
@@ -113,9 +182,9 @@ config host
 	option ip '192.168.31.18'
 
 config host
-	option name 'XiaoMi5'
+	option name 'iPhone6'
 	option dns '1'
-	option mac 'B0:E2:35:25:25:1D'
+	option mac '64:9A:BE:13:57:45'
 	option ip '192.168.31.19'
 
 config host
@@ -125,34 +194,22 @@ config host
 	option ip '192.168.31.20'
 
 config host
-	option name 'iPhone6'
-	option dns '1'
-	option mac '64:9A:BE:13:57:45'
-	option ip '192.168.31.21'
-
-config host
-	option name 'iPhone7Plus'
-	option dns '1'
-	option mac 'A0:3B:E3:DF:B2:81'
-	option ip '192.168.31.22'
-
-config host
 	option name 'XiaoTianCaiQ2'
 	option dns '1'
 	option mac '7C:FD:82:6B:48:01'
-	option ip '192.168.31.23'
+	option ip '192.168.31.21'
 
 config host
 	option name 'NiuTingTing'
 	option dns '1'
 	option mac '80:B6:24:75:22:D4'
-	option ip '192.168.31.24'
+	option ip '192.168.31.22'
 
 config host
-	option name 'K30Pro'
+	option mac '90:81:58:ED:1B:B6'
+	option name 'XuMiniPhone12Pro'
 	option dns '1'
-	option mac '9C:28:F7:96:74:F6'
-	option ip '192.168.31.25'
+	option ip '192.168.31.23'
 
 config host
 	option name 'Keting-MiTV'
@@ -333,7 +390,7 @@ config host
 	option dns '1'
 	option mac 'C4:65:16:51:B3:B6'
 	option ip '192.168.31.74'
-	
+
 config host
 	option name 'BanDianMao-DigiEye'
 	option dns '1'
@@ -357,3 +414,22 @@ config host
 	option dns '1'
 	option mac '40:31:3C:EA:65:AE'
 	option ip '192.168.31.78'
+
+config host
+	option mac '24:A1:60:3A:17:05'
+	option name 'HuiShui'
+	option dns '1'
+	option ip '192.168.31.79'
+
+config host
+	option mac '54:48:E6:52:85:B5'
+	option name 'HeatCold-Zhuwo'
+	option dns '1'
+	option ip '192.168.31.80'
+
+config srvhost
+	option srv '_vlmcs._tcp'
+	option target 'Openwrt'
+	option port '1688'
+	option class '0'
+	option weight '100'
