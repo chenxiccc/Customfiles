@@ -1,9 +1,10 @@
+
 config redirect
 	option target 'DNAT'
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option src_dport '22201'
+	option src_dport '55201'
 	option dest_ip '192.168.31.201'
 	option dest_port '80'
 	option name 'MG201'
@@ -13,7 +14,7 @@ config redirect
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option src_dport '22202'
+	option src_dport '55202'
 	option dest_ip '192.168.31.202'
 	option dest_port '80'
 	option name 'MG202'
@@ -23,7 +24,7 @@ config redirect
 	option src 'wan'
 	option dest 'lan'
 	option proto 'tcp udp'
-	option src_dport '22203'
+	option src_dport '55203'
 	option dest_ip '192.168.31.203'
 	option dest_port '80'
 	option name 'MG203'
@@ -45,8 +46,8 @@ config redirect
 	option proto 'tcp udp'
 	option src_dport '55505'
 	option dest_ip '192.168.31.5'
-	option dest_port '80'
 	option name 'SG5-RuoDianXiang'
+	option dest_port '80'
 
 config redirect
 	option target 'DNAT'
@@ -57,4 +58,3 @@ config redirect
 	option dest_ip '192.168.31.6'
 	option dest_port '80'
 	option name 'SG6-KeTing'
-
