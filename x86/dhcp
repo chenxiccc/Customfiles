@@ -433,3 +433,10 @@ config srvhost
 	option port '1688'
 	option class '0'
 	option weight '100'
+
+config host
+	option mac '04:CF:8C:AC:6E:34'
+	option ip '192.168.31.81'
+	option name 'Gelan-zhuwo'
+	option dns '1'
+
